@@ -9,7 +9,8 @@
   @include abstracts.generate-root-vars(abstracts.$colors);
   @include abstracts.generate-root-vars(abstracts.$spacings);
 
-  @include abstracts.set-font-styles();
+  font-family: var(--ff-chivo);
+  font-size: 16px;
 
   background-color: var(--clr-blue-950);
   color: var(--clr-blue-300);

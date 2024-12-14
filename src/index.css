@@ -126,13 +126,36 @@ meter {
   --spc-100: 0.5rem;
   --spc-50: 0.25rem;
   font-family: var(--ff-chivo);
+  font-size: 16px;
+  background-color: var(--clr-blue-950);
+  color: var(--clr-blue-300);
+}
+
+.text-preset-1 {
+  font-family: var(--ff-chivo);
+  font-weight: var(--fw-light);
+  font-size: var(--fs-lg);
+  line-height: var(--lh-120);
+  letter-spacing: 0rem;
+  text-transform: uppercase;
+}
+
+.text-preset-2 {
+  font-family: var(--ff-chivo);
   font-weight: var(--fw-light);
   font-size: var(--fs-rg);
   line-height: var(--lh-150);
   letter-spacing: 0rem;
   text-transform: none;
-  background-color: var(--clr-blue-950);
-  color: var(--clr-blue-300);
+}
+
+.text-preset-3 {
+  font-family: var(--ff-chivo);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-200);
+  letter-spacing: 0rem;
+  text-transform: none;
 }
 
 /*# sourceMappingURL=index.css.map */

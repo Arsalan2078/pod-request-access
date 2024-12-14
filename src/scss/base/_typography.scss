@@ -1,0 +1,22 @@
+@use "../abstracts/index" as abstracts;
+
+.text-preset-1 {
+  @include abstracts.set-font-styles(
+    $font-weight: var(--fw-light),
+    $font-size: var(--fs-lg),
+    $line-height: var(--lh-120),
+    $text-transform: uppercase
+  );
+}
+
+.text-preset-2 {
+  @include abstracts.set-font-styles();
+}
+
+.text-preset-3 {
+  @include abstracts.set-font-styles(
+    $font-weight: var(--fw-bold),
+    $font-size: var(--fs-sm),
+    $line-height: var(--lh-200)
+  );
+}
