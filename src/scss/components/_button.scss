@@ -1,0 +1,25 @@
+@use "../abstracts/index" as abstracts;
+
+.button {
+  border-radius: 1.75rem;
+  padding: var(--spc-100) var(--spc-400);
+
+  width: min(100%, 19rem);
+
+  background-color: var(--clr-green);
+  color: var(--clr-blue-950);
+
+  display: inline-flex;
+  justify-content: center;
+
+  &:hover,
+  &:focus {
+    background-color: mix(abstracts.$clr-green, white);
+  }
+}
+
+@media (min-width: abstracts.$bp-tablet) {
+  .button {
+    width: auto;
+  }
+}

@@ -1,0 +1,18 @@
+@use "../abstracts/index" as abstracts;
+
+.text-field {
+  border-radius: 1.75rem;
+  padding: var(--spc-100) var(--spc-400);
+
+  width: min(100%, 19rem);
+
+  background-color: var(--clr-blue-900);
+  // color: opacity(var(--clr-blue-300), 0.5);
+}
+
+@media (min-width: abstracts.$bp-tablet) {
+  .text-field {
+    width: auto;
+    background-color: transparent;
+  }
+}

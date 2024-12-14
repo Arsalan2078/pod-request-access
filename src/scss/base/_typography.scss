@@ -1,5 +1,6 @@
 @use "../abstracts/index" as abstracts;
 
+// TEXT PRESETS
 .text-preset-1 {
   @include abstracts.set-font-styles(
     $font-weight: var(--fw-light),
@@ -19,4 +20,18 @@
     $font-size: var(--fs-sm),
     $line-height: var(--lh-200)
   );
+}
+
+// EXTENSIONS
+body {
+  @extend .text-preset-2;
+}
+
+h1 {
+  @extend .text-preset-1;
+}
+
+button,
+input {
+  @extend .text-preset-3;
 }

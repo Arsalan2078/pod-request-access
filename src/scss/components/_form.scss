@@ -1,0 +1,19 @@
+@use "../abstracts/index" as abstracts;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spc-100);
+}
+
+@media (min-width: abstracts.$bp-tablet) {
+  .form {
+    border-radius: 1.75rem;
+    padding: 0.25rem;
+    background-color: var(--clr-blue-900);
+    flex-direction: row;
+    justify-content: space-between;
+    width: 28rem;
+  }
+}
