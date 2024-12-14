@@ -1,0 +1,37 @@
+@use "./functions";
+
+$font-families: (
+  "prefix": "ff",
+  "values": (
+    "chivo": (
+      "'Chivo'",
+      serif,
+    ),
+  ),
+);
+
+$font-weights: (
+  "prefix": "fw",
+  "values": (
+    "light": 300,
+    "bold": 700,
+  ),
+);
+
+$font-sizes: (
+  "prefix": "fs",
+  "values": (
+    "lg": functions.generate-clamp(2rem, 3rem),
+    "rg": functions.generate-clamp(0.875rem, 1.125rem),
+    "sm": 0.8125rem,
+  ),
+);
+
+$line-heights: (
+  "prefix": "lh",
+  "values": (
+    120: 120%,
+    150: 150%,
+    200: 200%,
+  ),
+);

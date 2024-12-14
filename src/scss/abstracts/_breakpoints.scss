@@ -1,0 +1,12 @@
+$breakpoints: (
+  "prefix": "bp",
+  "values": (
+    "mobile": 23.4375rem,
+    "tablet": 48rem,
+    "desktop": 90rem,
+  ),
+);
+
+$bp-mobile: 23.4375rem;
+$bp-tablet: 48rem;
+$bp-desktop: 90rem;

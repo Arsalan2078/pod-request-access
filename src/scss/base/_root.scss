@@ -1,0 +1,16 @@
+@use "../abstracts/index" as abstracts;
+
+:root {
+  @include abstracts.generate-root-vars(abstracts.$breakpoints);
+  @include abstracts.generate-root-vars(abstracts.$font-families);
+  @include abstracts.generate-root-vars(abstracts.$font-weights);
+  @include abstracts.generate-root-vars(abstracts.$font-sizes);
+  @include abstracts.generate-root-vars(abstracts.$line-heights);
+  @include abstracts.generate-root-vars(abstracts.$colors);
+  @include abstracts.generate-root-vars(abstracts.$spacings);
+
+  @include abstracts.set-font-styles();
+
+  background-color: var(--clr-blue-950);
+  color: var(--clr-blue-300);
+}

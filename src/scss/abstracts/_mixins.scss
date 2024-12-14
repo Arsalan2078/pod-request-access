@@ -1,0 +1,24 @@
+@mixin generate-root-vars($map) {
+  $prefix: map-get($map, "prefix");
+  $values: map-get($map, "values");
+
+  @each $key, $value in $values {
+    --#{$prefix}-#{$key}: #{$value};
+  }
+}
+
+@mixin set-font-styles(
+  $font-family: var(--ff-chivo),
+  $font-weight: var(--fw-light),
+  $font-size: var(--fs-rg),
+  $line-height: var(--lh-150),
+  $letter-spacing: 0rem,
+  $text-transform: none
+) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  text-transform: $text-transform;
+}

@@ -1,0 +1,17 @@
+@use "./breakpoints";
+
+@function generate-clamp(
+  $fs-min,
+  $fs-max,
+  $width-min: breakpoints.$bp-mobile,
+  $width-max: breakpoints.$bp-tablet
+) {
+  $slope: calc(($fs-max - $fs-min) / ($width-max - $width-min));
+  $yAxisIntersection: $fs-min - ($slope * $width-min);
+
+  @return clamp(
+    #{$fs-min},
+    #{$yAxisIntersection} + #{$slope} * 100vw,
+    #{$fs-max}
+  );
+}
